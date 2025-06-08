@@ -1,6 +1,7 @@
 // pages/scan.js
 
 import { useState } from "react";
+import Button from "./Button";
 
 export default function ScanPage() {
   const [address, setAddress] = useState("");
@@ -36,19 +37,7 @@ export default function ScanPage() {
           required
         />
         <br /><br />
-        <button
-          type="submit"
-          style={{
-            padding: "10px 20px",
-            fontSize: "16px",
-            backgroundColor: "#0070f3",
-            color: "white",
-            border: "none",
-            borderRadius: "6px"
-          }}
-        >
-          Scan
-        </button>
+        <Button type="submit">Scan</Button>
       </form>
 
       {loading && <p style={{ marginTop: "20px" }}>⏳ Checking wallet…</p>}
