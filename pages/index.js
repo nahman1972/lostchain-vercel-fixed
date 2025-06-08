@@ -1,8 +1,13 @@
-export default function Home() {
+// pages/index.js
+import Layout from "../Layout";
+
+export default function HomePage() {
   return (
-    <div style={{ display: 'grid', placeItems: 'center', height: '100vh' }}>
-      <h1>✅ LostChain is live!</h1>
-      <p>Welcome to the crypto recovery app.</p>
-    </div>
+    <Layout>
+      <div style={{ textAlign: "center", marginTop: "80px" }}>
+        <h1>✅ LostChain is live!</h1>
+        <p>Welcome to the crypto recovery app.</p>
+      </div>
+    </Layout>
   );
 }
