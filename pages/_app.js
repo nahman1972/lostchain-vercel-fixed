@@ -1,7 +1,7 @@
 // pages/_app.js
 
-import '../styles_globals.css';
-import Layout from '../Layout';
+import '../styles/styles_globals.css'; // dacă ai folder "styles"
+import Layout from '../components/Layout'; // dacă Layout e în "components"
 
 export default function App({ Component, pageProps }) {
   return (
